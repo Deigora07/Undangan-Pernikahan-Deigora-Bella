@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4a261">
+  <title>Deigora & Bella — Undangan Pernikahan</title>
+  <meta name="description" content="Undangan pernikahan Deigora Putra Kusuma dan Salsa Bella Navita, 10 Juni 2028.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-note" aria-hidden="true">♪</div>
+  <audio id="bgMusic" loop preload="none">
+    <source src="music.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="cover" id="cover">
+      <div class="cover-shade"></div>
+      <div class="cover-content">
+        <p class="eyebrow">UNDANGAN PERNIKAHAN</p>
+        <p class="script">The Wedding of</p>
+        <h1>Deigora <span>&amp;</span><br>Salsa</h1>
+        <p class="cover-date">SABTU, 10 JUNI 2028</p>
+        <div class="cover-rule"></div>
+        <p class="guest-label">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+        <p class="guest-name" id="guestName">Tamu Undangan</p>
+        <button class="button button-light" id="openInvitation">Buka Undangan <span aria-hidden="true">↗</span></button>
+        <p class="small-note">Mohon doa restu untuk hari bahagia kami</p>
+      </div>
+      <div class="scroll-cue">SCROLL UNTUK MELIHAT <span>↓</span></div>
+    </section>
+
+    <section class="intro section reveal" id="home">
+      <p class="eyebrow">DENGAN PENUH RASA SYUKUR</p>
+      <h2>Two hearts, <em>one journey.</em></h2>
+      <p class="section-copy">Di bawah langit senja dan debur ombak, kami ingin memulai perjalanan baru. Dengan penuh kebahagiaan, kami mengundang Anda untuk menjadi bagian dari hari istimewa kami.</p>
+      <div class="sun-mark">☼</div>
+      <p class="script">Together with our families</p>
+      <h3>Deigora Putra Kusuma</h3>
+      <p class="ampersand">&amp;</p>
+      <h3>Salsa Bella Navita</h3>
+      <p class="muted">Dua hati, satu janji, perjalanan seumur hidup.</p>
+    </section>
+
+    <section class="countdown-section section reveal">
+      <p class="eyebrow">MENUJU HARI BAHAGIA</p>
+      <h2>Menghitung hari <em>bersamamu</em></h2>
+      <div class="countdown" aria-label="Hitung mundur pernikahan">
+        <div><strong id="days">000</strong><span>Hari</span></div>
+        <div><strong id="hours">00</strong><span>Jam</span></div>
+        <div><strong id="minutes">00</strong><span>Menit</span></div>
+        <div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+      <p class="muted" id="countdownMessage">Satu langkah lebih dekat menuju hari istimewa.</p>
+    </section>
+
+    <section class="details section reveal" id="acara">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2>Hari istimewa <em>kami</em></h2>
+      <p class="section-copy">Dengan hormat, kami mengundang Anda untuk hadir dan memberikan doa restu.</p>
+      <div class="event-card">
+        <div class="event-icon">♡</div>
+        <p class="script">Wedding Celebration</p>
+        <h3>Sabtu, 10 Juni 2028</h3>
+        <p>Waktu acara akan diinformasikan kemudian.</p>
+        <div class="event-line"></div>
+        <h4>Lokasi Acara</h4>
+        <p>Desa Purwosari, Dukuh Bubak,<br>Kabupaten Blora, Jawa Tengah</p>
+        <a class="button button-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Desa+Purwosari+Dukuh+Bubak+Kabupaten+Blora">Lihat Petunjuk Lokasi ↗</a>
+      </div>
+    </section>
+
+    <section class="gallery-section section reveal" id="galeri">
+      <p class="eyebrow">OUR MOMENTS</p>
+      <h2>Sepenggal <em>cerita kami</em></h2>
+      <p class="section-copy">Ganti foto-foto di bawah dengan foto terbaik kalian.</p>
+      <div class="gallery">
+        <figure class="gallery-tall"><img src="WhatsApp Image 2026-10-20 at 16.56.42.jpeg" alt="Inspirasi foto pasangan di hari pernikahan" loading="lazy"><figcaption>Our beginning</figcaption></figure>
+        <figure><img src="WhatsApp Image 2026-10-20 at 16.56.47.jpeg" alt="Momen perayaan pernikahan" loading="lazy"><figcaption>Little moments</figcaption></figure>
+        <figure><img src="WhatsApp Image 2026-10-20 at 16.56.48.jpeg" alt="Pasangan merayakan cinta" loading="lazy"><figcaption>Forever starts here</figcaption></figure>
+      </div>
+      <p class="tiny-note"></p>
+    </section>
+
+    <section class="rsvp-section section reveal" id="rsvp">
+      <p class="eyebrow">KONFIRMASI KEHADIRAN</p>
+      <h2>Akankah kamu <em>hadir?</em></h2>
+      <p class="section-copy">Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami.</p>
+      <form id="rsvpForm" class="rsvp-form">
+        <label for="name">Nama lengkap</label>
+        <input id="name" name="name" autocomplete="name" placeholder="Masukkan nama Anda" required>
+        <label for="attendance">Konfirmasi kehadiran</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Pilih jawaban</option>
+          <option value="Hadir">Insyaallah hadir</option>
+          <option value="Tidak hadir">Mohon maaf, belum bisa hadir</option>
+        </select>
+        <label for="guests">Jumlah tamu (termasuk Anda)</label>
+        <select id="guests" name="guests">
+          <option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option>
+        </select>
+        <label for="message">Ucapan dan doa (opsional)</label>
+        <textarea id="message" name="message" rows="3" placeholder="Tuliskan ucapan terbaik..."></textarea>
+        <button class="button button-dark" type="submit">Kirim Konfirmasi ↗</button>
+        <p class="tiny-note">Tombol ini membuka WhatsApp. Ganti nomor tujuan di file script.js terlebih dahulu.</p>
+        <p id="formStatus" class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="closing section reveal">
+      <div class="closing-sun"></div>
+      <p class="script">With love,</p>
+      <h2>Deigora <span>&amp;</span> Salsa</h2>
+      <p>Terima kasih atas doa, kasih, dan perhatian yang diberikan kepada kami.</p>
+      <p class="closing-date">10 . 06 . 2028</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dibuat dengan cinta untuk hari bahagia Deigora &amp; Bella</p>
+    <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false">♫ Putar musik</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
